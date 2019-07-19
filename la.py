@@ -27,6 +27,7 @@ def solve(A, b):
     for k in range(n-1): # pivot equation(a) ทำให้ตัวแปรตัวที่ 1 หายไป #k
         for j in range(k+1,n):  # pivot eq #j
             lam = A[j][k]/A[k][k]
+            
             # update A[j][kเป็นต้นไป]
             A[j,k:n] = A[j,k:n] - lam*A[k,k:n]
 
